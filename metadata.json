@@ -1,0 +1,5 @@
+{
+  "name": "Hardware Input Tester",
+  "description": "A comprehensive web application to test various aspects of your mouse and keyboard, including click speed, polling rate, key registration, and key rollover capabilities.",
+  "requestFramePermissions": []
+}

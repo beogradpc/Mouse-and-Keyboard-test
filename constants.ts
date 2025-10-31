@@ -1,0 +1,128 @@
+export interface KeyDefinition {
+  code: string;
+  label?: string;
+  sub?: string;
+  icon?: string;
+  x: number;
+  y: number;
+  w?: number;
+  h?: number;
+}
+
+export const KEY_LAYOUT: KeyDefinition[] = [
+  // Row 1
+  { code: 'Escape', label: 'ESC', icon: 'EscapeIcon', x: 0, y: 0, w: 1.5, h: 1 },
+  { code: 'F1', label: 'F1', x: 2.5, y: 0 },
+  { code: 'F2', label: 'F2', x: 3.5, y: 0 },
+  { code: 'F3', label: 'F3', x: 4.5, y: 0 },
+  { code: 'F4', label: 'F4', x: 5.5, y: 0 },
+  { code: 'F5', label: 'F5', x: 7, y: 0 },
+  { code: 'F6', label: 'F6', x: 8, y: 0 },
+  { code: 'F7', label: 'F7', x: 9, y: 0 },
+  { code: 'F8', label: 'F8', x: 10, y: 0 },
+  { code: 'F9', label: 'F9', x: 11.5, y: 0 },
+  { code: 'F10', label: 'F10', x: 12.5, y: 0 },
+  { code: 'F11', label: 'F11', x: 13.5, y: 0 },
+  { code: 'F12', label: 'F12', x: 14.5, y: 0 },
+  { code: 'PrintScreen', label: 'PRINT SCREEN', icon: 'PrintScreenIcon', x: 16, y: 0 },
+  { code: 'ScrollLock', label: 'SCROLL LOCK', icon: 'ScrollLockIcon', x: 17, y: 0 },
+  { code: 'Pause', label: 'PAUSE BREAK', icon: 'PauseBreakIcon', x: 18, y: 0 },
+
+  // Row 2
+  { code: 'Backquote', sub: '~', label: '`', x: 0, y: 1.5 },
+  { code: 'Digit1', sub: '!', label: '1', x: 1, y: 1.5 },
+  { code: 'Digit2', sub: '@', label: '2', x: 2, y: 1.5 },
+  { code: 'Digit3', sub: '#', label: '3', x: 3, y: 1.5 },
+  { code: 'Digit4', sub: '$', label: '4', x: 4, y: 1.5 },
+  { code: 'Digit5', sub: '%', label: '5', x: 5, y: 1.5 },
+  { code: 'Digit6', sub: '^', label: '6', x: 6, y: 1.5 },
+  { code: 'Digit7', sub: '&', label: '7', x: 7, y: 1.5 },
+  { code: 'Digit8', sub: '*', label: '8', x: 8, y: 1.5 },
+  { code: 'Digit9', sub: '(', label: '9', x: 9, y: 1.5 },
+  { code: 'Digit0', sub: ')', label: '0', x: 10, y: 1.5 },
+  { code: 'Minus', sub: '_', label: '-', x: 11, y: 1.5 },
+  { code: 'Equal', sub: '+', label: '=', x: 12, y: 1.5 },
+  { code: 'Backspace', label: 'BACKSPACE', icon: 'BackspaceIcon', w: 2.5, x: 13, y: 1.5 },
+  { code: 'Insert', label: 'INSERT', icon: 'InsertIcon', x: 16, y: 1.5 },
+  { code: 'Home', label: 'HOME', icon: 'HomeIcon', x: 17, y: 1.5 },
+  { code: 'PageUp', label: 'PG UP', icon: 'PageUpIcon', x: 18, y: 1.5 },
+  { code: 'NumLock', label: 'NUM LOCK', icon: 'NumLockIcon', x: 19.5, y: 1.5 },
+  { code: 'NumpadDivide', label: '/', x: 20.5, y: 1.5 },
+  { code: 'NumpadMultiply', label: '*', x: 21.5, y: 1.5 },
+  { code: 'NumpadSubtract', label: '-', x: 22.5, y: 1.5 },
+
+  // Row 3
+  { code: 'Tab', label: 'TAB', icon: 'TabIcon', w: 2, x: 0, y: 2.5 },
+  { code: 'KeyQ', label: 'Q', x: 2, y: 2.5 },
+  { code: 'KeyW', label: 'W', x: 3, y: 2.5 },
+  { code: 'KeyE', label: 'E', x: 4, y: 2.5 },
+  { code: 'KeyR', label: 'R', x: 5, y: 2.5 },
+  { code: 'KeyT', label: 'T', x: 6, y: 2.5 },
+  { code: 'KeyY', label: 'Y', x: 7, y: 2.5 },
+  { code: 'KeyU', label: 'U', x: 8, y: 2.5 },
+  { code: 'KeyI', label: 'I', x: 9, y: 2.5 },
+  { code: 'KeyO', label: 'O', x: 10, y: 2.5 },
+  { code: 'KeyP', label: 'P', x: 11, y: 2.5 },
+  { code: 'BracketLeft', sub: '{', label: '[', x: 12, y: 2.5 },
+  { code: 'BracketRight', sub: '}', label: ']', x: 13, y: 2.5 },
+  { code: 'Backslash', sub: '|', label: '\\', w: 1.5, x: 14, y: 2.5 },
+  { code: 'Delete', label: 'DEL', icon: 'DeleteIcon', x: 16, y: 2.5 },
+  { code: 'End', label: 'END', icon: 'EndIcon', x: 17, y: 2.5 },
+  { code: 'PageDown', label: 'PG DN', icon: 'PageDownIcon', x: 18, y: 2.5 },
+  { code: 'Numpad7', label: '7', x: 19.5, y: 2.5 },
+  { code: 'Numpad8', label: '8', x: 20.5, y: 2.5 },
+  { code: 'Numpad9', label: '9', x: 21.5, y: 2.5 },
+  { code: 'NumpadAdd', label: '+', h: 2, x: 22.5, y: 2.5 },
+
+  // Row 4
+  { code: 'CapsLock', label: 'CAPS LOCK', icon: 'CapsLockIcon', w: 2.5, x: 0, y: 3.5 },
+  { code: 'KeyA', label: 'A', x: 2.5, y: 3.5 },
+  { code: 'KeyS', label: 'S', x: 3.5, y: 3.5 },
+  { code: 'KeyD', label: 'D', x: 4.5, y: 3.5 },
+  { code: 'KeyF', label: 'F', x: 5.5, y: 3.5 },
+  { code: 'KeyG', label: 'G', x: 6.5, y: 3.5 },
+  { code: 'KeyH', label: 'H', x: 7.5, y: 3.5 },
+  { code: 'KeyJ', label: 'J', x: 8.5, y: 3.5 },
+  { code: 'KeyK', label: 'K', x: 9.5, y: 3.5 },
+  { code: 'KeyL', label: 'L', x: 10.5, y: 3.5 },
+  { code: 'Semicolon', sub: ':', label: ';', x: 11.5, y: 3.5 },
+  { code: 'Quote', sub: '"', label: "'", x: 12.5, y: 3.5 },
+  { code: 'Enter', label: 'RETURN', icon: 'EnterIcon', w: 2.5, x: 13.5, y: 3.5 },
+  { code: 'Numpad4', label: '4', x: 19.5, y: 3.5 },
+  { code: 'Numpad5', label: '5', x: 20.5, y: 3.5 },
+  { code: 'Numpad6', label: '6', x: 21.5, y: 3.5 },
+
+  // Row 5
+  { code: 'ShiftLeft', label: 'SHIFT', icon: 'ShiftIcon', w: 3, x: 0, y: 4.5 },
+  { code: 'KeyZ', label: 'Z', x: 3, y: 4.5 },
+  { code: 'KeyX', label: 'X', x: 4, y: 4.5 },
+  { code: 'KeyC', label: 'C', x: 5, y: 4.5 },
+  { code: 'KeyV', label: 'V', x: 6, y: 4.5 },
+  { code: 'KeyB', label: 'B', x: 7, y: 4.5 },
+  { code: 'KeyN', label: 'N', x: 8, y: 4.5 },
+  { code: 'KeyM', label: 'M', x: 9, y: 4.5 },
+  { code: 'Comma', sub: '<', label: ',', x: 10, y: 4.5 },
+  { code: 'Period', sub: '>', label: '.', x: 11, y: 4.5 },
+  { code: 'Slash', sub: '?', label: '/', x: 12, y: 4.5 },
+  { code: 'ShiftRight', label: 'SHIFT', icon: 'ShiftIcon', w: 3, x: 13, y: 4.5 },
+  { code: 'ArrowUp', icon: 'ArrowUpIcon', x: 17, y: 4.5 },
+  { code: 'Numpad1', label: '1', x: 19.5, y: 4.5 },
+  { code: 'Numpad2', label: '2', x: 20.5, y: 4.5 },
+  { code: 'Numpad3', label: '3', x: 21.5, y: 4.5 },
+  { code: 'NumpadEnter', label: 'ENTER', icon: 'EnterIcon', h: 2, x: 22.5, y: 4.5 },
+
+  // Row 6
+  { code: 'ControlLeft', label: 'CONTROL', icon: 'ControlIcon', w: 2, x: 0, y: 5.5 },
+  { code: 'MetaLeft', label: 'WIN', icon: 'WinIcon', w: 1.5, x: 2, y: 5.5 },
+  { code: 'AltLeft', label: 'ALT', icon: 'AltIcon', w: 1.5, x: 3.5, y: 5.5 },
+  { code: 'Space', label: 'SPACE', icon: 'SpaceIcon', w: 6, x: 5, y: 5.5 },
+  { code: 'AltRight', label: 'ALT', icon: 'AltIcon', w: 1.5, x: 11, y: 5.5 },
+  { code: 'MetaRight', label: 'WIN', icon: 'WinIcon', w: 1.5, x: 12.5, y: 5.5 },
+  { code: 'ContextMenu', label: 'MENU', icon: 'MenuIcon', w: 1.5, x: 14, y: 5.5 },
+  { code: 'ControlRight', label: 'CONTROL', icon: 'ControlIcon', w: 2, x: 15.5, y: 5.5 },
+  { code: 'ArrowLeft', icon: 'ArrowLeftIcon', x: 16, y: 5.5 },
+  { code: 'ArrowDown', icon: 'ArrowDownIcon', x: 17, y: 5.5 },
+  { code: 'ArrowRight', icon: 'ArrowRightIcon', x: 18, y: 5.5 },
+  { code: 'Numpad0', label: '0', w: 2, x: 19.5, y: 5.5 },
+  { code: 'NumpadDecimal', label: '.', x: 21.5, y: 5.5 },
+];
